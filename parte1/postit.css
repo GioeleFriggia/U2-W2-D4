@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@500&family=Montserrat:wght@600&family=Open+Sans:wght@300;600;700&display=swap");
+
+body {
+  font-family: "Indie Flower", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #eee;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 700px;
+  height: 600px;
+  background-color: grey;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.post-it {
+  flex: 0 0 auto;
+  width: 160px;
+  height: 140px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, z-index 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transform-origin: center bottom;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.post-it:hover {
+  transform: scale(1.2) rotate(1deg);
+  z-index: 2;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-it1 {
+  transform: scale(1) rotate(-5deg);
+  background-color: #ffcccb; /* Colore rosato */
+  order: 1;
+}
+
+.post-it2 {
+  transform: scale(0.9) rotate(-6deg);
+  background-color: #add8e6; /* Colore celeste */
+  order: 2;
+}
+
+.post-it3 {
+  transform: scale(0.9) rotate(-8deg);
+  background-color: #98fb98; /* Colore verde chiaro */
+  order: 3;
+}
+
+.post-it4 {
+  transform: scale(0.9) rotate(10deg);
+  background-color: #ffd700; /* Colore oro */
+  order: 4;
+}
+
+.post-it5 {
+  transform: scale(0.9) rotate(10deg);
+  background-color: #dda0dd; /* Colore viola */
+  order: 5;
+}
+
+.post-it6 {
+  transform: scale(0.9) rotate(15deg);
+  background-color: #ff6347; /* Colore rosso corallo */
+  order: 6;
+}
